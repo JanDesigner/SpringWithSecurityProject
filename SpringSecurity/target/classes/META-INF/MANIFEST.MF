@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Mike
+Build-Jdk: 9.0.4
+Implementation-Title: SpringSecurity
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: Spring
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/SpringSecurity
+Created-By: Maven Integration for Eclipse
+

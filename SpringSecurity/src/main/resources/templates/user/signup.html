@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th= "http://www.thymeleaf.org">
+<head>
+<meta charset = "utf-8" />
+<meta name = "viewport" content = "width=device-width,initial-scale=1.0"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+</head>
+<title>Sign in</title>
+<body>
+
+	<div class=  "container">
+		<div class = "row py-5 d-flex justify-content-center">
+			<div class = "col-lg-8 ">
+				
+				<form  class = "form-horizontal" role = "form" method = "POST" th:action="@{/signup}" th:object="${user}">
+					
+					<div class= "alert alert-success" role = "alert" th:if="${successMessage}" th:utexr="${successMessage}">
+					
+					</div>
+					<div>
+					
+					<h2>Register User</h2>	
+					
+					
+					</div>
+					
+					<div>
+						
+						<div class = "form-group d-flex">
+						<input type = "text" class = "form-control" id = "firstName" th:field="*{firstName}" placeholder = "Firstname"/>
+						<span class = "mx-2"></span>
+						<input type = "text" class = "form-control" id = "lastName" th:field= "*{lastName}" placeholder = "Lastname" />
+						</div>
+						<input type = "email" class = "form-control" id = "email" th:field= "*{email}" placeholder = "Email" />
+						<div class = "form-control-feedback">
+						 
+						</div>
+						<input type = "password" class = "form-control" id = "password" th:field= "*{password}" placeholder = "Password" />
+						<button type ="submit" class = "btm btn-primary"><i class = "fa fa-user-plus"></i>Register</button>
+						
+						
+						
+					
+					</div>
+	
+				</form>
+	
+		
+		
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

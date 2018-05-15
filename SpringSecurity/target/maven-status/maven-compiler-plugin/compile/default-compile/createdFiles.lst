@@ -1,0 +1,10 @@
+com\springboot\configuration\WebMvcConfig.class
+com\springboot\controller\UserController.class
+com\springboot\service\UserServiceImpl.class
+com\springboot\SpringSecurityApplication.class
+com\springboot\model\User.class
+com\springboot\service\UserService.class
+com\springboot\repository\UserRepository.class
+com\springboot\repository\RoleRepository.class
+com\springboot\configuration\SecurityConfiguration.class
+com\springboot\model\Role.class
